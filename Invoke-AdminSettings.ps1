@@ -108,6 +108,7 @@ function Clear-FRandOFS() {
     }    
 }
 
+Clear-FRandOFS
 
 function Revoke-CSC () {
     # VARs-N-Such
@@ -170,3 +171,5 @@ function Revoke-CSC () {
 }
 
 Revoke-CSC
+
+EXIT 0
