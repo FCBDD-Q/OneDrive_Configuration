@@ -7,8 +7,6 @@
 #                                                                              #
 ################################################################################
 #>
-$OutNull = Clear-Variable * -ErrorAction SilentlyContinue -ErrorVariable DropErr
-
 function Start-VarsAndLogging() {
     
     switch (Test-Path 'C:\ODMIG\LOG') {
@@ -144,7 +142,6 @@ function Revoke-CSC () {
     #Take Ownership of CSC
     Try {
         # setup Notification bubble
-
         $OwnProc = 'C:\Windows\System32\takeown.exe'
         $OwnArgs = '/R /A /D Y /F C:\windows\csc\v2.0.6\namespace\'
         $global:OwnDir = 'C:\windows\csc\v2.0.6\namespace\'

@@ -8,7 +8,7 @@
 ################################################################################
 #>
 
-$OutNull = Clear-Variable * -ErrorAction SilentlyContinue -ErrorVariable DropErr
+
 function Invoke-VarsAndLogging() {
     switch (Test-Path "$($env:USERPROFILE)\OD_LOG") {
         $true {
